@@ -1,0 +1,47 @@
+.partners__all-partners {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $nav-color;
+    margin-bottom: 50px;
+}
+
+.partners__our-partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners__partners-items:not(:last-child) {
+    margin-right: 30px;
+}
+
+.partners__partners-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border-color $duration $timing-function;
+
+    &:hover,
+    &:focus {
+            border-color: $hover-color;
+        }
+}
+
+
+
+.partners__partners-icons {
+    fill: #afb1b8;
+    transition: fill $duration $timing-function;
+    .partners__partners-link:hover &,
+        .partners__partners-link:focus & {
+            fill: $hover-color;
+        }
+}
+
